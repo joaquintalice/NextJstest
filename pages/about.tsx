@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
+import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,7 +17,7 @@ export default function About() {
             <main className={`${styles.main} ${inter.className}`}>
                 <div className={styles.description}>
 
-                    <h1>Ir al <a className={styles.title} href='/'>Home</a></h1>
+                    <h1>Ir al <Link className={styles.title} href='/'>Home</Link></h1>
 
                     <p>
                         Get started by editing&nbsp;
