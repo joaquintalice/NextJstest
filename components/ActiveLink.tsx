@@ -1,24 +1,24 @@
 import { useRouter } from "next/router"
 
 import Link from "next/link"
+import { CSSProperties, FC } from "react"
 
 
-type NavTypes = {
+interface props {
     text: string,
     href: string,
 }
-const style = {
+const style: CSSProperties = {
     color: 'rgb(0, 195, 249)',
-    textDecoration: 'underline'
+    textDecoration: 'underline',
 }
 
-export const ActiveLink = ({ text, href }: NavTypes) => {
+export const ActiveLink: FC<props> = ({ text, href }: props) => {
 
     const { asPath } = useRouter();
-    console.log(useRouter())
     // console.log(asPath)
 
     return (
-        <Link style={asPath === href ? style : null} href={href} > {text} </Link>
+        <Link style={asPath === href ? style : undefined} href={href} > {text} </Link>
     )
 }

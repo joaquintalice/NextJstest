@@ -1,0 +1,22 @@
+
+import Link from 'next/link'
+import { MainLayout } from '@/components/layouts/MainLayout'
+
+export default function PricingPage() {
+    return (
+
+        <MainLayout>
+            <div className={'description'}>
+
+                <h1>Pricing page</h1>
+
+                <h1>Ir al <Link className={'title'} href='/'>Home</Link></h1>
+
+                <p>
+                    Get started by editing&nbsp;
+                    <code className={'code'}>pages/pricing.tsx</code>
+                </p>
+            </div>
+        </MainLayout>
+    )
+}

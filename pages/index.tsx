@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import { MainLayout } from '@/components/layouts/MainLayout'
-import { DarkLayout } from '@/components/layouts/DarkLayout';
-import { ReactElement } from 'react';
+
 
 
 export default function Home() {
