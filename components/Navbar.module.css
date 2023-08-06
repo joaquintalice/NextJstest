@@ -1,0 +1,8 @@
+.menu-container {
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    background-color: rgb(118, 118, 118);
+}
+
+.menu-container a {}
